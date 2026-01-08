@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBS축구센터 - 기본에 기술을 더하다</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: #2c5530; color: white; padding: 1rem 0; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; }
+        
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav a { color: white; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        
+        .hero { background: linear-gradient(rgba(44,85,48,0.8), rgba(44,85,48,0.8)), url('images/KakaoTalk_Photo_2026-01-08-12-08-36 007.jpeg'); 
+                background-size: cover; background-position: center; color: white; text-align: center; padding: 4rem 0; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; }
+        
+        section { padding: 3rem 0; }
+        h2 { font-size: 2rem; margin-bottom: 2rem; text-align: center; color: #2c5530; }
+        
+        .intro { background: #f8f9fa; }
+        .intro-content { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center; }
+        .intro img { width: 100%; border-radius: 10px; }
+        
+        .training-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .training-item { background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; }
+        .training-item img { width: 100%; height: 200px; object-fit: cover; }
+        .training-item h3 { padding: 1rem; color: #2c5530; }
+        
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; cursor: pointer; }
+        
+        .products { background: #f8f9fa; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .product-item { background: white; padding: 2rem; border-radius: 10px; text-align: center; }
+        .product-item img { width: 100%; max-width: 200px; margin-bottom: 1rem; }
+        
+        footer { background: #2c5530; color: white; text-align: center; padding: 2rem 0; }
+        
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; gap: 1rem; }
+            nav ul { flex-direction: column; text-align: center; }
+            .hero h1 { font-size: 2rem; }
+            .intro-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">FBS축구센터</div>
+                <nav>
+                    <ul>
+                        <li><a href="#intro">소개</a></li>
+                        <li><a href="#training">훈련내용</a></li>
+                        <li><a href="#gallery">훈련사진</a></li>
+                        <li><a href="#products">축구양말</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>기본에 기술을 더하다</h1>
+            <p>FBS축구센터에서 축구의 기본기와 전문 기술을 함께 배워보세요</p>
+        </div>
+    </section>
+
+    <section id="intro" class="intro">
+        <div class="container">
+            <h2>센터 소개</h2>
+            <div class="intro-content">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 001.jpeg" alt="FBS축구센터">
+                <div>
+                    <h3>FBS축구센터</h3>
+                    <p>FBS축구센터는 "기본에 기술을 더하다"라는 모토로 운영되는 전문 축구 훈련 센터입니다.</p>
+                    <p>체계적인 훈련 프로그램을 통해 선수들의 기본기 향상과 전문 기술 개발을 동시에 추구합니다.</p>
+                    <p>경험 많은 코치진과 함께 개인의 실력 향상과 팀워크 발전을 위한 맞춤형 훈련을 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training">
+        <div class="container">
+            <h2>훈련 내용</h2>
+            <div class="training-grid">
+                <div class="training-item">
+                    <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 002.jpeg" alt="기본기 훈련">
+                    <h3>기본기 훈련</h3>
+                    <p>패스, 드리블, 슈팅 등 축구의 기본 기술을 체계적으로 훈련합니다.</p>
+                </div>
+                <div class="training-item">
+                    <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 003.jpeg" alt="전술 훈련">
+                    <h3>전술 훈련</h3>
+                    <p>팀 전술과 포지션별 역할을 이해하고 실전에 적용하는 훈련을 진행합니다.</p>
+                </div>
+                <div class="training-item">
+                    <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 004.jpeg" alt="체력 훈련">
+                    <h3>체력 훈련</h3>
+                    <p>축구에 필요한 지구력, 순발력, 민첩성을 기르는 체력 훈련을 실시합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>센터 훈련 사진</h2>
+            <div class="gallery">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 005.jpeg" alt="훈련 사진 1">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 006.jpeg" alt="훈련 사진 2">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-36 008.jpeg" alt="훈련 사진 3">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-36 009.jpeg" alt="훈련 사진 4">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-37 010.jpeg" alt="훈련 사진 5">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-37 011.jpeg" alt="훈련 사진 6">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-37 012.jpeg" alt="훈련 사진 7">
+                <img src="images/KakaoTalk_Photo_2026-01-08-12-08-37 013.jpeg" alt="훈련 사진 8">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>축구양말 판매</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/KakaoTalk_Photo_2026-01-08-12-08-38 015.jpeg" alt="축구양말 1">
+                    <h3>프리미엄 축구양말</h3>
+                    <p>고품질 소재로 제작된 전문 축구양말입니다.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/KakaoTalk_Photo_2026-01-08-12-08-38 016.jpeg" alt="축구양말 2">
+                    <h3>컴포트 축구양말</h3>
+                    <p>편안한 착용감과 뛰어난 통기성을 자랑하는 축구양말입니다.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/KakaoTalk_Photo_2026-01-08-12-08-38 017.jpeg" alt="축구양말 3">
+                    <h3>프로페셔널 축구양말</h3>
+                    <p>프로 선수들이 사용하는 고성능 축구양말입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 FBS축구센터. 기본에 기술을 더하다.</p>
+        </div>
+    </footer>
+</body>
+</html>
