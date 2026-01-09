@@ -32,6 +32,8 @@
         .location-btn { display: inline-block; background: #2c5530; color: white; padding: 0.8rem 1.5rem; 
                        text-decoration: none; border-radius: 5px; margin-top: 1rem; transition: background 0.3s; }
         .location-btn:hover { background: #1e3a21; }
+        .map-container { margin-top: 1.5rem; }
+        .map-container iframe { width: 100%; height: 300px; border: none; border-radius: 8px; }
         
         .training-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
         .training-item { background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; }
@@ -53,6 +55,7 @@
             nav ul { flex-direction: column; text-align: center; }
             .hero h1 { font-size: 2rem; }
             .intro-content { grid-template-columns: 1fr; }
+            .map-container iframe { height: 250px; }
         }
     </style>
 </head>
@@ -92,7 +95,13 @@
                     <p>체계적인 훈련 프로그램을 통해 선수들의 기본기 향상과 전문 기술 개발을 동시에 추구합니다.</p>
                     <p>경험 많은 코치진과 함께 개인의 실력 향상과 팀워크 발전을 위한 맞춤형 훈련을 제공합니다.</p>
                     <a href="https://m.place.naver.com/place/1009043685/location?entry=pll&filter=location&selected_place_id=1009043685" 
-                       target="_blank" class="location-btn">📍 센터 위치 보기</a>
+                       target="_blank" class="location-btn">📍 네이버 지도에서 보기</a>
+                    
+                    <!-- 네이버 지도 미리보기 -->
+                    <div class="map-container">
+                        <iframe src="https://map.naver.com/p/entry/place/1009043685?c=15.00,0,0,0,dh" 
+                                allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
