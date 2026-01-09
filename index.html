@@ -17,6 +17,7 @@
         nav a { color: white; text-decoration: none; }
         nav a:hover { text-decoration: underline; }
         
+        /* 메인 히어로 배경 이미지 - 센터 전체 모습이나 대표 이미지 */
         .hero { background: linear-gradient(rgba(44,85,48,0.8), rgba(44,85,48,0.8)), url('images/KakaoTalk_Photo_2026-01-08-12-08-36 007.jpeg'); 
                 background-size: cover; background-position: center; color: white; text-align: center; padding: 4rem 0; }
         .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
@@ -28,6 +29,9 @@
         .intro { background: #f8f9fa; }
         .intro-content { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center; }
         .intro img { width: 100%; border-radius: 10px; }
+        .location-btn { display: inline-block; background: #2c5530; color: white; padding: 0.8rem 1.5rem; 
+                       text-decoration: none; border-radius: 5px; margin-top: 1rem; transition: background 0.3s; }
+        .location-btn:hover { background: #1e3a21; }
         
         .training-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
         .training-item { background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; }
@@ -80,12 +84,15 @@
         <div class="container">
             <h2>센터 소개</h2>
             <div class="intro-content">
+                <!-- 센터 소개 이미지: 센터 로고나 대표 사진 -->
                 <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 001.jpeg" alt="FBS축구센터">
                 <div>
                     <h3>FBS축구센터</h3>
                     <p>FBS축구센터는 "기본에 기술을 더하다"라는 모토로 운영되는 전문 축구 훈련 센터입니다.</p>
                     <p>체계적인 훈련 프로그램을 통해 선수들의 기본기 향상과 전문 기술 개발을 동시에 추구합니다.</p>
                     <p>경험 많은 코치진과 함께 개인의 실력 향상과 팀워크 발전을 위한 맞춤형 훈련을 제공합니다.</p>
+                    <a href="https://m.place.naver.com/place/1009043685/location?entry=pll&filter=location&selected_place_id=1009043685" 
+                       target="_blank" class="location-btn">📍 센터 위치 보기</a>
                 </div>
             </div>
         </div>
@@ -96,16 +103,19 @@
             <h2>훈련 내용</h2>
             <div class="training-grid">
                 <div class="training-item">
+                    <!-- 기본기 훈련 이미지: 패스, 드리블, 슈팅 연습 모습 -->
                     <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 002.jpeg" alt="기본기 훈련">
                     <h3>기본기 훈련</h3>
                     <p>패스, 드리블, 슈팅 등 축구의 기본 기술을 체계적으로 훈련합니다.</p>
                 </div>
                 <div class="training-item">
+                    <!-- 전술 훈련 이미지: 팀 전술 연습이나 포지션 훈련 모습 -->
                     <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 003.jpeg" alt="전술 훈련">
                     <h3>전술 훈련</h3>
                     <p>팀 전술과 포지션별 역할을 이해하고 실전에 적용하는 훈련을 진행합니다.</p>
                 </div>
                 <div class="training-item">
+                    <!-- 체력 훈련 이미지: 달리기, 체력 단련 모습 -->
                     <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 004.jpeg" alt="체력 훈련">
                     <h3>체력 훈련</h3>
                     <p>축구에 필요한 지구력, 순발력, 민첩성을 기르는 체력 훈련을 실시합니다.</p>
@@ -117,6 +127,7 @@
     <section id="gallery">
         <div class="container">
             <h2>센터 훈련 사진</h2>
+            <!-- 갤러리 이미지들: 실제 훈련 모습, 선수들 사진 등 8장 -->
             <div class="gallery">
                 <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 005.jpeg" alt="훈련 사진 1">
                 <img src="images/KakaoTalk_Photo_2026-01-08-12-08-35 006.jpeg" alt="훈련 사진 2">
@@ -135,16 +146,19 @@
             <h2>축구양말 판매</h2>
             <div class="product-grid">
                 <div class="product-item">
+                    <!-- 축구양말 이미지 1: 실제 판매하는 축구양말 사진 -->
                     <img src="images/KakaoTalk_Photo_2026-01-08-12-08-38 015.jpeg" alt="축구양말 1">
                     <h3>프리미엄 축구양말</h3>
                     <p>고품질 소재로 제작된 전문 축구양말입니다.</p>
                 </div>
                 <div class="product-item">
+                    <!-- 축구양말 이미지 2: 실제 판매하는 축구양말 사진 -->
                     <img src="images/KakaoTalk_Photo_2026-01-08-12-08-38 016.jpeg" alt="축구양말 2">
                     <h3>컴포트 축구양말</h3>
                     <p>편안한 착용감과 뛰어난 통기성을 자랑하는 축구양말입니다.</p>
                 </div>
                 <div class="product-item">
+                    <!-- 축구양말 이미지 3: 실제 판매하는 축구양말 사진 -->
                     <img src="images/KakaoTalk_Photo_2026-01-08-12-08-38 017.jpeg" alt="축구양말 3">
                     <h3>프로페셔널 축구양말</h3>
                     <p>프로 선수들이 사용하는 고성능 축구양말입니다.</p>
